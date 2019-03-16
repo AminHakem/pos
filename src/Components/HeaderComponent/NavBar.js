@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 class NavBar extends Component {
     render() {
         return (
-            <h3>Sicko Navbar</h3>
+            <h3>Navbar</h3>
         )
     }
 }
