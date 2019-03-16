@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import { browserHistory } from 'react-router';
+import { Switch, Route } from 'react-router-dom'
+
 import HomePage from './HomePage';
 import Navbar from './HeaderComponent/Navbar';
 import ProductList from './ProductList';
@@ -14,10 +14,12 @@ class App extends Component {
     return (
       <React.Fragment>
         <Navbar></Navbar>
-        <ProductList></ProductList>
-        <Details />
-        <Cart />
-        <Default />
+        <Switch>
+          <Route exact path='/' component={ProductList} />
+          <Route path='/cart' component={Cart} />
+          <Route path='/details' component={Details} />
+          <Route component={Default} />
+        </Switch>
       </React.Fragment>
 
     );
