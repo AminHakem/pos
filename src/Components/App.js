@@ -2,17 +2,16 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { browserHistory } from 'react-router';
 import HomePage from './HomePage';
-import NavBar from './HeaderComponent/NavBar';
+import Navbar from './HeaderComponent/Navbar';
+import 'bootstrap/dist/css/bootstrap.min.css'
 class App extends Component {
   render() {
     return (
-      <Router>
-        <div>
-          <NavBar />
-          <Route name="home" exact path="/" component={HomePage} />
-        </div>
-      </Router>
-    )
+      <React.Fragment>
+        <h3>hello from app</h3>
+      </React.Fragment>
+
+    );
   }
 }
 export default App;
