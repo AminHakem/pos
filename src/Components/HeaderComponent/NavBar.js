@@ -26,7 +26,7 @@ class NavBar extends Component {
                     </li>
                 </ul>
                 <Link to="/cart" className="ml-auto">
-                    <div classname="button-transiton">
+                    <div className="button-transiton">
 
                         <ButtonContainer >
                             <span className="mr-2">
