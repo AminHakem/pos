@@ -47,5 +47,5 @@ background: var(--mainBlue);
     font-size:1.3rem;
     text-transform:capitalize;
 }
-`
+`;
 export default NavBar;
